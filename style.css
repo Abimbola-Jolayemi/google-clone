@@ -1,0 +1,524 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202124;
+    /* color: white; */
+    /* color: #bdc1c6; */
+    margin-bottom: 80%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 3px solid black;
+    height: 60px;
+}
+
+.logo {
+    /* background-color: #202124; */
+    transition: initial;
+    color: white;
+    position: absolute;
+    top: 0.2mm;
+    left: 1px;
+}
+.input{
+    background-color: #414344fb;
+    color: white;
+}
+
+.search-input{
+    position: absolute;
+    left: 160px;
+    width: 650px;
+    height: 45px;
+    background-color: #414344fb;
+    /* color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    box-shadow: 4px 5px 12px 5px rgba(0,0,0, 0.1);
+    border-radius: 33px;
+    padding: 10px;
+}
+
+.xmark{
+    color: grey;
+    border-right: 1px solid rgba(0, 0, 0, 0.664);
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 5px;
+    position: relative;
+    left: 40px;
+    gap: 3px;
+}
+
+.group-icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* border-left: solid 1px #ccc; */
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: #414344fb;
+    
+}
+
+.group-icons i {
+    gap: 10px;
+    color: transparent;
+    /* background-clip: text; */
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to top, yellow, red, blue);
+}
+.nav-mag{
+    color: grey;
+}
+
+.search-input input{
+    padding: 0.6rem;
+    width: 60%;
+    border: none;
+    outline: none;
+    /* background-color: #ccc; */
+}
+
+.side-icons{
+    color: white;
+    gap: 25px;
+    font-size: 20px;
+    position: absolute;
+    top: 35px;
+    right: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border-left: solid 1px #ccc; */
+}
+
+.side-icons i {
+    color: white;
+}
+
+.mail-box{
+    background-color: royalblue;
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    height: 30px;
+    align-content: center;
+}
+
+.top-nav-bar{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    gap: 40px;
+    top: 100px;
+    left: 200px;
+    padding-top: 10px;
+}
+
+.nav-items{
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+#tools{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 550px
+}
+
+.first-body{
+    border-top: 1px solid grey;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 140px;
+    left: 5px;
+}
+
+.second-header{
+    color: grey;
+    position: absolute;
+    top: 15px;
+    left: 200px;
+}
+
+.footballers-overview{
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 400px;
+    color: black;
+    flex-direction: row;
+    width: 60%;
+    gap: 10px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.lionel-header{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.footballer{
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    color: rgba(255, 255, 255, 0.329);
+    font-size: 15px;
+}
+
+.f-overview{
+    background-color: #414344fb;
+    color: grey;
+    border: 1px solid #414344fb;
+    border-radius: 30px;
+    width: 90px;
+    height: 36px;
+    font-size: 14px;
+}
+
+.search-img{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    /* border: 2px solid white; */
+    border-radius: 30px;
+    width: 430px;
+}
+
+.img-messi{
+    border-radius: 15px;
+}
+
+.other-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.stats-section{
+    background-color: #414344fb;
+    position: absolute;
+    top: 300px;
+    left: 650px;
+    width: 280px;
+    height: 298px;
+    border-radius: 15px;
+    color: whitesmoke;
+    padding-left: 5px;
+}
+.stats-section h3{
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.stats-section h2{
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 3px;
+    position: relative;
+    top: 25px;
+    left: 5px;
+}
+.achievements{
+    position: relative;
+    top: 75px;
+    left: 1px;
+    right: 13px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.achievement-list{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+}
+#a-list-2{
+    gap: 162px;
+}
+#a-list-3{
+    gap: 162px;
+}
+#a-list-4{
+    gap: 128px;
+}
+.about-section{
+    position: absolute;
+    top: 300px;
+    left: 940px;
+    color: whitesmoke;
+    border-left: 1px white solid;
+    padding-left: 10px;
+}
+.wiki{
+    color: royalblue;
+}
+.rosa{
+    color: royalblue;
+}
+.about{
+    font-size: 20px;
+    font-weight: 300;
+}
+.short-about{
+    position: relative;
+    top: 10px;
+}
+.claim{
+    height: 32px;
+    width: 250px;
+    border-radius: 30px;
+    background-color: #202124;
+    border: 1px solid #414344fb;
+    color: grey;
+    align-content: center;
+    font-size: 13px;
+}
+.claim-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.b-class{
+    font-size: 15px;
+    font-weight: 700;
+}
+.feedback{
+    color: white;
+    font-size: small;
+    position: absolute;
+    left: 300px;
+    top: 410px;
+}
+.claim-feed{
+    border-bottom: 1px solid grey;
+    height: 40px;
+}
+.profile-div{
+    position: relative;
+    top: 10px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+}
+.profile{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+.profile-icons{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 10px;
+    gap: 35px;
+    /* justify-content: center; */
+    align-items: center;
+}
+#youtube{
+    position: relative;
+    top: 1px;
+    /* left: 20px; */
+}
+#facebook{
+    position: relative;
+    top: 12px;
+}
+#instagram{
+    position: relative;
+    top: 12px;
+}
+.y-text{
+    position: absolute;
+    top: 91px;
+    align-items: center;
+    left: 32px;
+}
+.f-text{
+    position: relative;
+    top: 4px;
+}
+.youtube-img{
+    position: relative;
+    top: 1px;
+}
+.social{
+    color: grey;
+}
+.stat{
+    color: white;
+}
+.stat-text{
+    position: relative;
+    top: 25px;
+    font-size: 20px;
+    font-weight: 200;
+}
+.chevron-img{
+    position: relative;
+    top: 5px;
+    left: 300px;
+}
+.psg{
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+    font-weight: 100;
+}
+.league{
+    position: relative;
+    top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+}
+.ligue-1{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.ligue{
+    display: flex;
+    flex-direction: column;
+}
+.ligue-no{
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+.uefa{
+    position: relative;
+    top: 30px;
+    gap: 110px;
+
+}
+.uefa-no{
+    position: relative;
+    top: 1px;
+    left: 170px;
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+.uefa-det{
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+}
+.trophee{
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+}
+.trophee-det{
+    position: relative;
+    top: 10px;
+    gap: 130px;
+}
+.trophee-no{
+    position: absolute;
+    top: 850px;
+    left: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+.french{
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
+}
+.french-cup{
+    padding-top: 12px;
+}
+.french-no{
+    position: absolute;
+    top: 920px;
+    left: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+}
+.also-search{
+    padding-top: 10px;
+}
+.players-ref{
+    padding-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.players{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+#neymar{
+    position: absolute;
+    top: 1013px;
+    left: 210px;
+}
+#mbappe{
+    position: relative;
+    left: 95px;
+}
+.see-more{
+    padding-bottom: 50px;
+}
+.see-button{
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 30px;
+    border-radius: 33px;
+    background-color: #414344fb;
+    border: 1px solid #414344fb;
+    color: whitesmoke;
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+.right-arrow{
+    color: white;
+}
